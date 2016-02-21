@@ -1,5 +1,5 @@
 # Earley parser
-A C# implementation of an Earley parser for Tree-adjoining grammars (working on natural languages)
+A C# implementation of an Earley parser working on Tree-adjoining grammars (working on natural languages)
 
 # NLP
 The Natural Language examples must use a Part-of-Speech Tagger. 
@@ -20,3 +20,8 @@ Run Talismane with a command line like:
 java -Xmx1G -jar talismane-core-2.4.7b.jar languagePack=frenchLanguagePack-2.4.4b.zip command=analyse mode=server encoding=UTF-8 port=7171
 
 In the examples, make sure you are using the Talismane class to generate the ISentence objects.
+
+# References
+See:
+- https://en.wikipedia.org/wiki/Earley_parser
+- https://en.wikipedia.org/wiki/Tree-adjoining_grammar
