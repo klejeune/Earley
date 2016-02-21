@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EarleyParser</RootNamespace>
+    <AssemblyName>EarleyParser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTypes\Regular\RegularEarleyData.cs" />
+    <Compile Include="DataTypes\Regular\RegularEarleyGrammarRuleCursor.cs" />
+    <Compile Include="DataTypes\Regular\RegularEarleyInput.cs" />
+    <Compile Include="DataTypes\TagGrammar\AdjunctionTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\AdjunctionType.cs" />
+    <Compile Include="DataTypes\TagGrammar\AnchorTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\BasicTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\Direction.cs" />
+    <Compile Include="DataTypes\TagGrammar\OrientedTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\SubstitutionTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\TagGrammarFactory.cs" />
+    <Compile Include="DataTypes\TagGrammar\TagTree.cs" />
+    <Compile Include="DataTypes\TagGrammar\TagTreeCursor.cs" />
+    <Compile Include="DataTypes\TagGrammar\AbstractTagTreeNode.cs" />
+    <Compile Include="DataTypes\TagGrammar\LexicalItem.cs" />
+    <Compile Include="EarleyBase\IEarleyData.cs" />
+    <Compile Include="EarleyBase\IEarleyGrammarRule.cs" />
+    <Compile Include="EarleyBase\IEarleyGrammarRuleCursor.cs" />
+    <Compile Include="EarleyBase\IEarleyInput.cs" />
+    <Compile Include="EarleyParser.cs" />
+    <Compile Include="Grammar.cs" />
+    <Compile Include="DataTypes\Regular\RegularGrammarRule.cs" />
+    <Compile Include="ParserState.cs" />
+    <Compile Include="PartOfSpeech\Talismane\Talismane.cs" />
+    <Compile Include="PartOfSpeech\Talismane\TalismaneAnswer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PosTagger\PosTagger.csproj">
+      <Project>{83e48638-ab4a-430f-9512-ab649516a378}</Project>
+      <Name>PosTagger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

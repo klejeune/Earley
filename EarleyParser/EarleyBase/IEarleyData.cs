@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EarleyParser.EarleyBase {
+    public interface IEarleyData {
+        bool IsTerminal { get; }
+        bool IsCompatibleWith(IEarleyInput input);
+        bool CanBeEmpty { get; }
+    }
+}

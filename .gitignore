@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EarleyParser/bin/Debug
+/EarleyParser/bin/Debug
+/packages
+/PosTagger/bin/Debug
+/Tests/bin/Debug
+/Tests/obj/Debug
+*.suo
+/PosTagger/obj/Debug

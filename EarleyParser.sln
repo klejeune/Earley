@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarleyParser", "EarleyParser\EarleyParser.csproj", "{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosTagger", "PosTagger\PosTagger.csproj", "{83E48638-AB4A-430F-9512-AB649516A378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{426FA8BF-6612-464F-A2C9-2E6C49A0C5D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2B7BBE-4DEF-48F0-87DB-16C15551BBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E48638-AB4A-430F-9512-AB649516A378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E48638-AB4A-430F-9512-AB649516A378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E48638-AB4A-430F-9512-AB649516A378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E48638-AB4A-430F-9512-AB649516A378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426FA8BF-6612-464F-A2C9-2E6C49A0C5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426FA8BF-6612-464F-A2C9-2E6C49A0C5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426FA8BF-6612-464F-A2C9-2E6C49A0C5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426FA8BF-6612-464F-A2C9-2E6C49A0C5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
